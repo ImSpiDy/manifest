@@ -11,11 +11,11 @@
 
  <!-- Replacements -->
          <!-- <remove-project name="AOSPA/android_bionic" />
-        <project path="bionic" name="bionic" revision="uvite" remote="Nub-XD" clone-depth="1" /> -->
+        <project path="bionic" name="bionic" revision="uvite" remote="Nub-XD" clone-depth="1" />
         <remove-project name="AOSPA/android_vendor_aospa" />
         <project path="vendor/aospa" name="android_vendor_aospa" revision="uvite" remote="Nub-XD" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
-        </project>
+        </project> -->
         <project path="keys" name="certs" remote="xen" revision="pa" clone-depth="1" />
 
 </manifest>
