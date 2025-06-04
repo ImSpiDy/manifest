@@ -5,6 +5,10 @@
            fetch="https://github.com/Los-Ext"
            revision="refs/heads/15.2" />
 
+  <remote  name="test"
+           fetch="https://github.com/Los-Ext"
+           revision="refs/heads/test" />
+
   <remote  name="crd"
            fetch="https://github.com/crdroidandroid"
            revision="refs/heads/15.0" />
@@ -16,6 +20,7 @@
   <remove-project path="device/lineage/sepolicy" />
   <remove-project path="external/jemalloc_new" />
   <remove-project path="frameworks/av" />
+  <remove-project path="frameworks/base" />
   <remove-project path="frameworks/native" />
   <remove-project path="system/core" />
 
@@ -29,7 +34,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed,sysui-studio" remote="ext" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed,sysui-studio" remote="test" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -38,6 +43,7 @@
   <project path="bionic" name="android_bionic" remote="ext" />
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="ext" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ext" />
+  <project path="frameworks/base" name="android_frameworks_base-new" remote="test" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ext" />
   <project path="system/core" name="android_system_core" remote="ext" />
 
