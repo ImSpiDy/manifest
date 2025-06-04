@@ -13,7 +13,11 @@
   <remove-project path="bionic" />
   <remove-project path="build/make" />
   <remove-project path="build/soong" />
+  <remove-project path="device/lineage/sepolicy" />
   <remove-project path="external/jemalloc_new" />
+  <remove-project path="frameworks/av" />
+  <remove-project path="frameworks/native" />
+  <remove-project path="system/core" />
 
  <!-- LosExt additions -->
   <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="ext" >
@@ -32,6 +36,11 @@
 
   <project path="art" name="android_art" remote="ext" />
   <project path="bionic" name="android_bionic" remote="ext" />
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="ext" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ext" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ext" />
+  <project path="system/core" name="android_system_core" remote="ext" />
+
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="crd" />
 
 </manifest>
