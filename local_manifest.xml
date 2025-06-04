@@ -5,11 +5,15 @@
            fetch="https://github.com/Los-Ext"
            revision="refs/heads/15.2" />
 
+  <remote  name="crd"
+           fetch="https://github.com/crdroidandroid"
+           revision="refs/heads/15.0" />
+
   <remove-project path="art" />
   <remove-project path="bionic" />
   <remove-project path="build/make" />
   <remove-project path="build/soong" />
-
+  <remove-project path="external/jemalloc_new" />
 
  <!-- LosExt additions -->
   <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="ext" >
@@ -28,5 +32,6 @@
 
   <project path="art" name="android_art" remote="ext" />
   <project path="bionic" name="android_bionic" remote="ext" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="crd" />
 
 </manifest>
