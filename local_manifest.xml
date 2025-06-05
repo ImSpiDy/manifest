@@ -13,6 +13,10 @@
            fetch="https://github.com/crdroidandroid"
            revision="refs/heads/15.0" />
 
+  <remote  name="crd-gl"
+           fetch="https://gitlab.com/crdroidandroid"
+           revision="refs/heads/15.0" />
+
   <remote name="axn"
           fetch="https://github.com/AxionAOSP/"
           revision="refs/heads/lineage-22.2" />
@@ -74,6 +78,7 @@
   </project>
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="crd" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="crd" />
+  <project path="packages/apps/FaceUnlock" name="android_packages_apps_FaceUnlock" remote="crd-gl" />
   <project path="toolchain/pgo-profiles" name="android_toolchain_pgo-profiles" remote="crd" />
 
  <!-- axion additions -->
