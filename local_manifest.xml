@@ -23,12 +23,14 @@
   <remove-project path="external/jemalloc_new" />
   <remove-project path="frameworks/av" />
   <remove-project path="frameworks/base" />
+  <remove-project path="frameworks/libs/systemui" />
   <remove-project path="frameworks/native" />
   <remove-project path="lineage-sdk" />
   <remove-project path="packages/apps/LineageParts" />
   <remove-project path="packages/apps/Settings" />
   <remove-project path="system/core" />
   <remove-project path="toolchain/pgo-profiles" />
+  <remove-project path="vendor/lineage" />
 
  <!-- LosExt additions -->
   <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="ext" >
@@ -54,9 +56,11 @@
   <project path="lineage-sdk" name="android_lineage-sdk" remote="ext" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="ext" />
   <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="ext" />
-  <project path="packages/apps/Personalizations" name="android_packages_apps_ExtLab" remote="ext" />
+  <project path="packages/apps/Personalizations" name="android_packages_apps_ExtLab" remote="test" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="test" />
   <project path="system/core" name="android_system_core" remote="ext" />
+  <project path="vendor/addons" name="android_vendor_addons" remote="ext" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="ext" />
 
  <!-- crdroid additions -->
   <project path="build/bazel" name="android_build_bazel" groups="pdk" remote="crd" >
@@ -66,5 +70,11 @@
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="crd" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="crd" />
   <project path="toolchain/pgo-profiles" name="android_toolchain_pgo-profiles" remote="crd" />
+
+ <!-- axion additions -->
+  <project path="packages/apps/LMOFreeform" name="android_packages_apps_LMOFreeform" remote="axn" />
+  <project path="packages/apps/VendorSupport" name="android_packages_apps_VendorSupport" remote="axn" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="axn" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="axn" />
 
 </manifest>
