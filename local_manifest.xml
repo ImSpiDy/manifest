@@ -13,6 +13,10 @@
            fetch="https://github.com/crdroidandroid"
            revision="refs/heads/15.0" />
 
+  <remote name="axn"
+          fetch="https://github.com/AxionAOSP/"
+          revision="refs/heads/lineage-22.2" />
+
   <remove-project path="art" />
   <remove-project path="bionic" />
   <remove-project path="build/bazel" />
@@ -28,6 +32,7 @@
   <remove-project path="lineage-sdk" />
   <remove-project path="packages/apps/LineageParts" />
   <remove-project path="packages/apps/Settings" />
+  <remove-project path="packages/overlays/Lineage" />
   <remove-project path="system/core" />
   <remove-project path="toolchain/pgo-profiles" />
   <remove-project path="vendor/lineage" />
